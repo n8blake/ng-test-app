@@ -11,14 +11,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static(__dirname + '/client/dist/client'));
 }
 
 // Add routes, both API and view
 //app.use(routes);
 app.get('/*', function(request, response) {
-  response.sendFile(path.join(__dirname+
-  '/client/build/index.html'));
+  response.sendFile(path.join( __dirname + '/client/dist/client/index.html'));
 });
 
 app.listen(PORT, () => {
