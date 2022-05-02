@@ -1,0 +1,30 @@
+{
+  "name": "ng-test-app",
+  "version": "1.0.0",
+  "description": "A basic web app with a Node/Express backend and Angular frontend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n8blake/ng-test-app.git"
+  },
+  "keywords": [
+    "node",
+    "angular"
+  ],
+  "author": "n8blake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n8blake/ng-test-app/issues"
+  },
+  "homepage": "https://github.com/n8blake/ng-test-app#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
